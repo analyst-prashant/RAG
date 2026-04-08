@@ -1,0 +1,32 @@
+Dear Hiring Manager,
+I am excited to apply for the Senior Data Analyst role at Symphony. With over 11+ years of
+experience delivering high-impact analytics across technology-driven environments, I bring a
+strong track record of transforming complex data into strategic insights that drive product and
+business decisions.
+Symphony’s mission to combine secure communication technology with AI-powered, realtime
+intelligence strongly resonates with me. I am motivated by opportunities where data
+strategy, product innovation, and scalable analytics intersect, and I am eager to contribute to a
+company redefining collaboration and intelligence in global finance.
+In my current and previous roles, I have led deep analysis of large, complex datasets to
+uncover trends, test hypotheses, and provide clear, actionable recommendations to both
+technical and non-technical stakeholders. I design intuitive dashboards and visualizations
+using tools such as Tableau, Power BI, enabling teams to explore data independently and
+make informed decisions in real time.
+I have extensive experience building and maintaining data models, forecasting frameworks,
+and end-to-end data pipelines using advanced SQL and ETL processes. Partnering closely
+with Product Managers, Engineering, and QA teams, I have coordinated product
+instrumentation efforts from concept through insight generation, ensuring data accuracy,
+scalability, and business relevance.
+My background also includes implementing predictive analytics and machine learning
+solutions to automate insight delivery and anticipate trends, supporting faster and more
+proactive decision-makingBeyond technical expertise, I am a strong communicator who
+enjoys translating complex findings into clear narratives and empowering teams to become
+more data-driven through collaboration and education. With experience across cloud
+platforms such as AWS, Azure, and GCP, I am confident in my ability to contribute
+meaningfully to Symphony’s ambitious growth and innovation goals.
+I would welcome the opportunity to bring my analytical leadership and problem-solving
+mindset to Symphony and help build impactful, scalable data products that support your
+vision for the future of secure, intelligent communication.
+Sincerely,
+Prashant Joshi
++447404944421

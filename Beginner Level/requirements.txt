@@ -1,0 +1,8 @@
+langchain
+langchain-core
+langchain-community
+pypdf
+pymupdf
+bs4
+chromadb
+faiss-cpu
