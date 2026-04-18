@@ -1,0 +1,14 @@
+Error 1: 
+ImportError: cannot import name 'ModelProfile' from 'langchain_core.language_models' (D:\AI\RAG\.venv\Lib\site-packages\langchain_core\language_models\__init__.py)
+Traceback:
+File "D:\AI\RAG\ObjectBox\app.py", line 6, in <module>
+    from langchain_groq import ChatGroq
+File "D:\AI\RAG\.venv\Lib\site-packages\langchain_groq\__init__.py", line 3, in <module>
+    from langchain_groq.chat_models import ChatGroq
+File "D:\AI\RAG\.venv\Lib\site-packages\langchain_groq\chat_models.py", line 15, in <module>
+    from langchain_core.language_models import (
+
+
+Reason: The problem is that langchain-objectbox 0.1.0 is being used with an incompatible LangChain stack in our environment, especially langchain-core 0.1.53.
+
+

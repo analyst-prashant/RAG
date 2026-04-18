@@ -1,0 +1,32 @@
+Error 1:
+
+Code: DATA_DIR = Path(__file__).resolve().parent / "data_harry_potter"
+
+IndexError: list index out of range
+Traceback:
+File "D:\AI\RAG\RAG_HuggingFace\app.py", line 48, in <module>
+    st.session_state.vector = FAISS.from_documents(
+                              ^^^^^^^^^^^^^^^^^^^^^
+File "D:\AI\RAG\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 814, in from_documents
+    return cls.from_texts(texts, embedding, metadatas=metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "D:\AI\RAG\.venv\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1044, in from_texts
+    return cls.__from(
+           ^^^^^^^^^^^
+File "D:\AI\RAG\.venv\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1001, in __from
+    index = faiss.IndexFlatL2(len(embeddings[0]))
+                                  ~~~~~~~~~~^^^
+
+
+Reason: The failure is upstream of FAISS: one of the PDFs throws a pypdf parse error, so the bulk directory load aborts and the app ends up with no chunks to index. I’m switching the ingestion path to a per-file loader with error handling so bad PDFs are skipped instead of taking down the whole app.
+
+
+Error 2:
+
+AttributeError: st.session_state has no attribute "vector". Did you forget to initialize it? More info: https://docs.streamlit.io/develop/concepts/architecture/session-state#initialization
+Traceback:
+File "D:\AI\RAG\RAG_Q&AChatbot\qa_app.py", line 114, in <module>
+    retriever = st.session_state.vector.as_retriever(search_kwargs={"k": 6})
+                ^^^^^^^^^^^^^^^^^^^^^^^
+File "D:\AI\RAG\.venv\Lib\site-packages\streamlit\runtime\state\session_state_proxy.py", line 132, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))

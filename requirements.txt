@@ -17,3 +17,5 @@ wikipedia
 arxiv
 langchainhub
 streamlit
+sentence-transformers
+langchain-objectbox
