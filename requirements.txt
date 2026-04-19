@@ -19,3 +19,6 @@ langchainhub
 streamlit
 sentence-transformers
 langchain-objectbox
+pinecone-client
+pinecone-text
+pinecone-notebooks
